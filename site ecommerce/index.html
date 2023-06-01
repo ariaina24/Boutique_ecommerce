@@ -1,0 +1,24 @@
+<div class="row">
+    {% for product in products %}
+        <div class="col-md-4">
+            <div class="product-item">
+                <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class=" img-fluid">
+                <h4>{{ product.name }}</h4>
+                <span class="product-subtitle">{{ product.subtitle }}</span>
+                <span class="product-price"> {{ product.price }} </span>
+            </div>
+        </div>   
+    {% endfor %}
+</div>
+
+<div class="row">
+    <div class="col-md-12">{{form_row(form.name)}}</div>
+    <div class="col-md-6">{{form_row(form.firstname)}}</div>
+    <div class="col-md-6">{{form_row(form.lastname)}}</div>
+</div> 
+
+<div class="text-right">
+    <strong>Sous-total : </strong><br>
+    <strong>Livraison : </strong><br>
+    <strong>Total : </strong><br>
+</div>
