@@ -3,7 +3,9 @@
 
 Si vous utiliser MySql
 > symfony console doctrine:database:create
+Puis
 > symfony console make:migration
+Apres
 > php bin/console doctrine:migrations:migrate
 
 Run
